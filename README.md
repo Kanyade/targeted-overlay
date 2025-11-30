@@ -107,14 +107,18 @@ class _TestState extends State<Test> with TargetedOverlayMixin {
 
 ## Parameters for inserting overlays
 
-| Parameter             | Description                                                                                                                                                                                                                                                                                                                |
-| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `context`                  | Current `BuildContext`.                                                                                                                                                                                                                                                                                               |
-| `key`                      | `GlobalKey` of the widget the overlay will be attached to.                                                                                                                                                                                                                                                            |
-| `builder`                  | Builder method of the overlay widget.                                                                                                                                                                                                                                                                                 |
-| `attachPoint`              | The point of the target widget where the overlay will be attached to. Note that the overlay is not centered to that point but is using the standard Flutter coordinates when rendering. As such, e.g. with `AttachPoint.topCenter`, the widget will be positioned on the left of the top center of the target widget. |
-| `axisMirrors` and `offset` | For precise control of the position, you can mirror the overlay based on the attach point and also manually offset the overlay with exact values.                                                                                                                                                                     |
-| `fadeDuration`             | Duration in which the overlay will fade out when removed.                                                                                                                                                                                                                                                             |
+| Parameter                  | Description                                                                                                                                       |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `context`                  | Current `BuildContext`.                                                                                                                           |
+| `key`                      | `GlobalKey` of the widget the overlay will be attached to.                                                                                        |
+| `builder`                  | Builder method of the overlay widget.                                                                                                             |
+| `attachPoint`              | The point of the target widget where the overlay will be attached to.                                                                             |
+| `axisMirrors` and `offset` | For precise control of the position, you can mirror the overlay based on the attach point and also manually offset the overlay with exact values. |
+| `fadeDuration`             | Duration in which the overlay will fade out when removed.                                                                                         |
+
+## "Limitation"
+
+The overlay is not centered at the `attachPoint`, just attached at that coordinate. As such, the overlays will be positioned next to it. Best advice is to play around with the `axisMirrors` and `offset` parameters to fine-tune the position.
 
 ## License
 

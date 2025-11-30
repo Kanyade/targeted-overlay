@@ -2,12 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:targeted_overlay/targeted_overlay.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: const Test(),
-    ),
-  );
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: const Test()));
 }
 
 class Test extends StatefulWidget {
@@ -40,14 +35,8 @@ class _TestState extends State<Test> with TargetedOverlayMixin {
               offset: const Offset(-15, -12),
               builder: (remove) {
                 return TapRegion(
-                  onTapOutside: (_) => hideOverlays(
-                    context: context,
-                    keys: [_key],
-                  ),
-                  onTapInside: (_) => hideOverlays(
-                    context: context,
-                    keys: [_key],
-                  ),
+                  onTapOutside: (_) => hideOverlays(context: context, keys: [_key]),
+                  onTapInside: (_) => hideOverlays(context: context, keys: [_key]),
                   child: Material(
                     textStyle: const TextStyle(color: Colors.black),
                     type: MaterialType.transparency,
@@ -70,10 +59,7 @@ class _TestState extends State<Test> with TargetedOverlayMixin {
             key: _key,
             width: 120,
             padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-            decoration: BoxDecoration(
-              color: Colors.blue.shade100,
-              borderRadius: BorderRadius.circular(16),
-            ),
+            decoration: BoxDecoration(color: Colors.blue.shade100, borderRadius: BorderRadius.circular(16)),
             child: const Text('Show Overlay'),
           ),
         ),

@@ -58,8 +58,8 @@ class AxisMirrors {
 /// The mixin allows inserting, hiding, and clearing overlays based on target widgets identified by [GlobalKey]s.
 /// It also provides methods to register target widgets and update their positions.
 mixin TargetedOverlayMixin on Diagnosticable {
-  final HashMap<GlobalKey, _OverlayData> _overlays = HashMap();
-  final HashMap<GlobalKey, _OverlayController> _overlayControllers = HashMap();
+  static final HashMap<GlobalKey, _OverlayData> _overlays = HashMap();
+  static final HashMap<GlobalKey, _OverlayController> _overlayControllers = HashMap();
 
   /// Inserts an overlay widget attached to the target widget identified by [key].
   /// The overlay is built using the provided [builder] function.

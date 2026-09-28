@@ -1,3 +1,7 @@
+## 0.2.0+1
+
+- Minor README change
+
 ## 0.2.0
 
 - Store the overlays in a static map since they are identified by GlobalKeys. Now HookWidgets may use this while keeping the const constructor.

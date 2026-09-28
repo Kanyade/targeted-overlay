@@ -123,7 +123,7 @@ The overlay is not centered at the `attachPoint`, just attached at that coordina
 ## License
 
 ```
-Copyright 2025 Norbert Csörgő
+Copyright 2026 Norbert Csörgő
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -135,3 +135,12 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
+
+## Support
+
+If you found this package useful, consider supporting the creation of many more to come:
+
+- [Buy me a coffee](https://buymeacoffee.com/norbertcsorgo.me)
+- [Revolut](https://revolut.me/norber6psx)
+
+Check out more of my work at [norbertcsorgo.me](https://norbertcsorgo.me/), or try [dartmonitor.dev](https://dartmonitor.dev/) to keep your dependencies in check.
